@@ -20,8 +20,8 @@ public class Categorie {
 //    @GeneratedValue(strategy = GenerationType.)
     @Column(updatable = false)
     private java.sql.Date dateCreation = new java.sql.Date(Calendar.getInstance().getTime().getTime());
-    private java.sql.Date datemodif;
-    @OneToMany(mappedBy = "categorie", fetch = FetchType.LAZY,
+    private java.sql.Date datemodif = new java.sql.Date(Calendar.getInstance().getTime().getTime());
+/*    @OneToMany(mappedBy = "categorie", fetch = FetchType.LAZY,
             cascade = CascadeType.ALL)
-    private Set<Produit> produits;
+    private Set<Produit> produits;*/
 }
